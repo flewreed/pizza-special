@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Special</title>
+</head>
+<body>
+  <div class="page">
+  <header>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="img/logotip.png" alt="logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="guests.html">Our guests</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+      <li class="cart"><a href="cart.html" ><i class="fas fa-shopping-cart"></i><span>0</span></a></li>
+    </ul>
+    
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+</header>
+
+<div id="button-up">
+  <span>&#8593;<br>top</span>
+</div>
+
+<container>
+
+<br>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img/slide1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/slide2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/slide3.jpg" style="width:100%">
+  </div>
+
+ <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<br>
+
+<div class="menumenu">
+  <a href="#pizza" class="scrollto">Pizza</a>
+  <a href="#sides" class="scrollto">Sides</a>
+  <a href="#drinks" class="scrollto">Drinks</a>
+  <a href="#desserts" class="scrollto">Desserts</a>
+</div>
+
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close1">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.00$</b></p>
+    <button class="add-cart cart1">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close2">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Mar.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Margherita</h1>
+      <p>Traditional recipe with signature tomato sauce, Mozzarella, oregano and juicy tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 9,6<br>
+    
+    Fats — 7,0<br>
+    
+    Carbohydrates — 20,8<br>
+    
+    Energy — 185/774<br>
+    
+    Weight — 380<br><br>
+    <br>
+    <p><b>Price: 5.00$</b></p>
+    <button class="add-cart cart2">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal3" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close3">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Ham.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Ham and mushrooms</h1>
+      <p>Delicate pizza with Garlic ranch sauce, Mozzarella, mushrooms, flavorful ham and garlic</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 10,9<br>
+    
+    Fats — 9,5<br>
+    
+    Carbohydrates — 26,6<br>
+    
+    Energy — 235,3/982,7<br>
+    
+    Weight — 340<br><br>
+    <br>
+    <p><b>Price: 6.00$</b></p>
+    <button class="add-cart cart3">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close4">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Veg.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Vegetarian</h1>
+      <p>Mozzarella cheese, tomato sauce, tomatoes, mushrooms, sweet green pepper, onion, olives</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 9,0<br>
+    
+    Fats — 5,0<br>
+    
+    Carbohydrates — 22,6<br>
+    
+    Energy — 174,7/731<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 4.00$</b></p>
+    <button class="add-cart cart4">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal5" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close5">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Mus.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Mustard</h1>
+      <p>Mustard sauce, mozzarella, chicken breast, feta cheese, tomatoes, onions</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,70<br>
+    
+    Carbohydrates — 29,6<br>
+    
+    Energy — 245,0/1026<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 6.00$</b></p>
+    <button class="add-cart cart5">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal6" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close6">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Rus.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Rustic BBQ</h1>
+      <p>BBQ season! Aromatic pork, spicy pepperoni, mushrooms, onions, green peppers with Mozzarella cheese and BBQ sauce</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 11,0<br>
+    
+    Fats — 9,0<br>
+    
+    Carbohydrates — 37<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 350<br><br>
+    <br>
+    <p><b>Price: 7.00$</b></p>
+    <button class="add-cart cart6">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal7" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close7">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/MS.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Mama's pasta, spaghetti</h1>
+      <p>Pasta, tomato sauce, mozarella and reggianito cheeses</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 3.00$</b></p>
+    <button class="add-cart cart7">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal8" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close8">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart8">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal9" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close9">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart9">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal10" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close10">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart10">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal11" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close11">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart11">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal12" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close12">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart12">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal13" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close13">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/SM.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Strawberry Milk cocktail</h1>
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 6,0<br>
+    
+    Carbohydrates — 4<br>
+    
+    Energy — 150<br>
+    
+    Weight — 300 ml<br><br>
+    <br>
+    <p><b>Price: 2.00$</b></p>
+    <button class="add-cart cart13">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal14" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close14">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart14">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal15" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close15">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart15">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal16" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close16">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart16">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal17" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close17">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart17">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal18" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close18">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart18">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal19" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close19">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Ches.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Chocolate cheesecake</h1>     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+
+    Protein — 4,0<br>
+    
+    Fats — 24,0<br>
+    
+    Carbohydrates — 25,6<br>
+    
+    Energy — 382,5/1600<br>
+    
+    Weight — 100<br><br>
+    <br>
+    <p><b>Price: 2.00$</b></p>
+    <button class="add-cart cart19">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal20" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close20">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Syr.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Syrniki</h1>
+      <p>Cheesecakes from the oven with topping of your choice</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    
+    Protein — 6,0<br>
+    
+    Fats — 3,0<br>
+    
+    Carbohydrates — 16<br>
+    
+    Energy — 120/500<br>
+    
+    Weight — 160<br><br>
+    <br>
+    <p><b>Price: 3.00$</b></p>
+    <button class="add-cart cart20">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal21" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close21">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart21">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal22" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close22">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart22">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal23" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close23">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart23">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+<div id="myModal24" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close24">&times;</span>
+  <div class="contents">
+    <div>
+    <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+     
+  </div>
+  <div style="text-align: center; padding-left: 5%;"><b>Nutrition information per 100g:</b><br>
+    Per person — 1<br>
+    
+    Protein — 12,0<br>
+    
+    Fats — 8,0<br>
+    
+    Carbohydrates — 44,6<br>
+    
+    Energy — 298,3/1072,7<br>
+    
+    Weight — 400<br><br>
+    <br>
+    <p><b>Price: 5.64$</b></p>
+    <button class="add-cart cart24">Add to cart&ensp;<i class="fas fa-cart-plus"></i></button></div>
+  </div>
+</div>
+</div>
+
+
+<div class="menu" id="menu">
+<h2 id="pizza">Pizza</h2>
+<br>
+<div class="cards">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Cap.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Capricciosa</h1>
+      <p>Tomato pizza sauce, ham, portobello mushrooms, champignon, mozzarella, tomatoes</p>      
+      <br>
+      <p><b>Price: 5.00$</b></p>
+      <br>
+      <button id="myBttn1">Watch more</button>
+
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Mar.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Margherita</h1>
+      <p>Traditional recipe with signature tomato sauce, Mozzarella, oregano and juicy tomatoes</p>
+      <br>
+      <p><b>Price: 5.00$</b></p>
+      <br>
+      <button id="myBttn2">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Ham.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Ham and mushrooms</h1>
+      <p>Delicate pizza with Garlic ranch sauce, Mozzarella, mushrooms, flavorful ham and garlic</p>
+      <br>
+      <p><b>Price: 6.00$</b></p>
+      <br>
+      <button id="myBttn3">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Veg.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Vegetarian</h1>
+      <p>Mozzarella cheese, tomato sauce, tomatoes, mushrooms, sweet green pepper, onion, olives
+      </p>
+      <br>
+      <p><b>Price: 4.00$</b></p>
+      <br>
+      <button id="myBttn4">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Mus.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Mustard</h1>
+      <p>Mustard sauce, mozzarella, chicken breast, feta cheese, tomatoes, onions</p>
+      <br>
+      <p><b>Price: 6.00$</b></p>
+      <br>
+      <button id="myBttn5">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Rus.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Rustic BBQ</h1>
+      <p>BBQ season! Aromatic pork, spicy pepperoni, mushrooms, onions, green peppers with Mozzarella cheese and BBQ sauce
+      </p>
+      <br>
+      <p><b>Price: 7.00$</b></p>
+      <br>
+      <button id="myBttn6">Watch more</button>
+    </div>
+  </div>
+</div>
+<br>
+</div>
+
+<h2 id="sides">Sides</h2>
+<br>
+<div class="cards">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/MS.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Mama's pasta, spaghetti</h1>
+        <p>Pasta, tomato sauce, mozarella and reggianito cheeses
+        </p>      
+        <br>
+        <p><b>Price: 3.00$</b></p>
+        <br>
+      <button id="myBttn7">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/MP.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Mama's pasta, penne</h1>
+        <p>Pasta, tomato sauce, mozarella and reggianito cheeses
+        </p>
+        <br>
+        <p><b>Price: 3.00$</b></p>
+        <br>
+      <button id="myBttn8">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/PP.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Primavera pasta, penne</h1>
+        <p>Pasta, tomato sauce, chicken breast, mozarella and reggianito cheeses</p>
+        <br>
+        <p><b>Price: 4.00$</b></p>
+        <br>
+      <button id="myBttn9">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/MC.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Meat Calzone</h1>
+        <p>Chicken breast, bacon, onions, mozarella cheese, BBQ sauce</p>
+        <br>
+        <p><b>Price: 4.00$</b></p>
+        <br>
+      <button id="myBttn10">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/VC.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Vegetarian Calzone</h1>
+        <p>Vegetables, mozarella cheese, tomato sauce</p>
+        <br>
+        <p><b>Price: 3.00$</b></p>
+        <br>
+      <button id="myBttn11">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/PS.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Potato slices</h1>
+        <p>Bakes potato slices with spices, sauce of your choice</p>
+        <br>
+        <p><b>Price: 2.00$</b></p>
+        <br>
+      <button id="myBttn12">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+<h2 id="drinks">Drinks</h2>
+<br>
+<div class="cards">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/SM.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Strawberry Milk cocktail</h1>
+      <br>
+      <p><b>Price: 2.00$</b></p>
+      <br>
+      <button id="myBttn13">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/CM.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Chocolate Milk cocktail</h1>
+      <br>
+      <p><b>Price: 2.00$</b></p>
+      <br>
+      <button id="myBttn14">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/VM.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Vanilla Milk coctail</h1>
+      <br>
+      <p><b>Price: 2.00$</b></p>
+      <br>
+      <button id="myBttn15">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Pep.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Pepsi</h1>
+      <br>
+      <p><b>Price: 1.00$</b></p>
+      <br>
+      <button id="myBttn16">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Mir.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Mirinda</h1>
+      <br>
+      <p><b>Price: 1.00$</b></p>
+      <br>
+      <button id="myBttn17">Watch more</button>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/7up.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>7UP</h1>
+      <br>
+      <p><b>Price: 1.00$</b></p>
+      <br>
+      <button id="myBttn18">Watch more</button>
+    </div>
+  </div>
+</div>
+<br>
+</div>
+
+<h2 id="desserts">Desserts</h2>
+<br>
+<div class="cards">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/Ches.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Chocolate cheesecake</h1>
+        <br>
+        <p><b>Price: 2.00$</b></p>
+        <br>
+      <button id="myBttn19">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/Syr.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Syrniki</h1>
+        <p>Cheesecakes from the oven with topping of your choice
+        </p>
+        <br>
+        <p><b>Price: 3.00$</b></p>
+        <br>
+      <button id="myBttn20">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/ChSC.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Choko scrolls</h1>
+        <p>Lots of chocolate! Rolls with chocolate filling, poured with chocolate with chocolate chips</p>
+        <br>
+        <p><b>Price: 4.00$</b></p>
+        <br>
+      <button id="myBttn21">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/NY.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>New York cheesecake</h1>
+        <br>
+        <p><b>Price: 2.00$</b></p>
+        <br>
+      <button id="myBttn22">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/Cres.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Crecsent with strawberry</h1>
+        <p>Crescent with strawberry, cream cheese and sugar with topping of your choice</p>
+        <br>
+        <p><b>Price: 3.00$</b></p>
+        <br>
+      <button id="myBttn23">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="img/AC.jpg" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <h1>Apple and cinnamon rolls</h1>
+        <p>Branded dough, caramel, green apple, cinnamon</p>
+        <br>
+        <p><b>Price: 4.00$</b></p>
+        <br>
+      <button id="myBttn24">Watch more</button>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+</div>
+
+
+
+</container>
+
+<br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Pizza Special</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="menu.html">Pizza-book</a></li>
+          <li><a href="https://blog.papajohns.ru/">Blog</a></li>
+        </ul>
+      </div> 
+      <div class="footer-col">
+        <h4>Work</h4>
+        <ul>
+          <li><a href="https://franchise.papajohns.ru/">Franchising</a></li>
+          <li><a href="https://rabota.papajohns.ru/">Career</a></li>
+          <li><a href="https://papajohns.ru/tomsk/dostavka">Delivery</a></li>
+        </ul>
+      </div> 
+      <div class="footer-col">
+        <h4>Need help?</h4>
+        <ul>
+          <li><a href="https://papajohns.ru/tomsk/questions">FAQ</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <div class="social-links">
+        <a href="https://www.facebook.com/papajohnsus"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/papajohns"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/papajohns_tomsk/"><i class="fab fa-instagram"></i></a>
+        </div>
+              </div>
+    </div>
+  </div>
+  <div class="copyright"> Copyright <a href="mailto:yvc7@tpu.ru.ru">YVC7</a> 
+    <script type="text/javascript">
+  document.write(new Date().getFullYear());
+    </script>
+  </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+  <script src="modals.js"></script>
+  <script src="scroll.js"></script> 
+  <script src="buttonup.js"></script>
+  </div>
+</body>
+</html>
